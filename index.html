@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Proinsite Home</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg">
+        <meta name="theme-color" content="" />
+        <meta name="keywords" content="proinsite, pro, proinsight"/>
+        <meta name="description" content="" /> 
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <meta name="auther" description="Aziz-Ansari">
+	    <link rel="stylesheet"  href="styles/bootstrap.min.css" type="text/css" />
+        <script src="poppers/popper.min.js"></script>
+	    <script src="jQuery/jquery-3.5.1.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo"><img class="img-fluid" src="images/logo.svg" alt=""></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#webinar">Webinar</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="banner">
+            <div class="banner-layer">
+                <div id="heading"> <h1>Free Webinar.....!</h1></div>
+                <div class="banner-button">
+                    <button class="btn btn-outline-light" data-toggle="modal" data-target="#staticBackdrop">Register Now</button>
+                    <div class="btn btn-outline-light"><a href="#webinar" id="know-more">Know more</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- wbinar registration form modal start -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                <div class="form-header">
+                    <h5>Register for webinar</h5><br>
+                    <div class="form-logo"></div>
+                </div>
+                <div class="modal-body">
+                    <div class="regform">
+                        <form action="">
+                            <div class="yourname"><input type="text" placeholder="your name" required></div>
+                            <div class="yuormail"><input type="email" placeholder="your email" required></div>
+                            <div class="phone"><input type="number" placeholder="phone" required></div>
+                            <select class="list" name="list" id="" required>
+                                <option value="list">select your stream</option>
+                                <option value="list">college student</option>
+                                <option value="list">working prof</option>
+                                <option value="list">school students</option>
+                            </select><br>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <p>After successful registration you will get mail containing the details of webinar.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- wbinar registration form modal end -->
+
+        <div class="about-section container mt-5" style="text-align: justify; border-left: 5px solid brown;">
+            <h3>Grow with us</h3>
+            <p>Go above and beyond. Boost your value with a course in professional development. Join Millions of Learners From Already Learning. whole new exprience with professional faculties 
+                , know how to grab an internship and ppo from a product based mnc. Deep dive into importance on problem solving and projects and their importance. Get to know what data structures questions are asked in the interview and what is the right approach to prepare them
+                Master new skills and achieve goals and discover stories instructors how they cracked interviews joined the respective firms.</p>
+        </div>
+
+        <!-- courses section start -->
+        <div class="jumbotron container" id="courses" style="margin-top: 100px;">
+            <div class="row">
+                <h2 class="col-md-12 mb-5" style="color: rgb(6, 44, 114);">Courses</h2>
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="course-logo">
+                                <img src="images/java.svg" alt="">
+                            </div>
+                            <h4><span class="fa fa-angle-left icon"></span> Core java <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>This course contains the basics of java programming language which will build a strong base for web and mobile application development enthusiasts. Java is one of the most demanding programming languages in the IT sector. Companies like Amazon, Netflix use Java for their backend and to build microservices.  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/data.svg" alt="">
+                            <h4><span class="fa fa-angle-left icon"></span> Data structure and algorithm <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>Data Structure and Algorithms are the basic building block of software engineering. We can't be a good Software Engineer without developing our data structures and problem solving skills. 70 %- 80%  of the interview questions of all product based companies are asked from this topic only. If you want to be a master in solving problems and become an expert in DS and Algo, Join our course.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/python.svg" alt="">
+                            <h4><span class="fa fa-angle-left icon"></span> Advance Python <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>The Raspberry Pi is a small, affordable single-board computer that you will use to design and develop fun and practical IoT devices while learning programming and computer hardware. In addition, you will learn how to set up up the Raspberry Pi environment, get a Linux operating system running, and write and execute some basic Python code on the Raspberry Pi. You will also learn how to use Python-based IDE (integrated development environments) for the Raspberry Pi and how to trace and debug Python code on the device.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card4">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/android.svg" alt="">
+                            <h4><span class="fa fa-angle-left icon"></span> Andriod app development <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>Due to the increase in the number of mobile devices day by day there is a boom in the demand for Mobile Application Developers. This course focuses on android application development with java</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/iot.svg" alt="">
+                            <h4><span class="fa fa-angle-left icon"></span> Advance IOT <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>In this  course, you will design a microcontroller-based embedded system. As an option, you can also build and test a system. The focus of your project will be to design the system so that it can be built on a low-cost budget for a real-world application. To complete this project you'll need to use all the skills you've learned in the course (programming microcontrollers, system design, interfacing, etc.). </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card4">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/ardiuno.svg" alt="">
+                            <h4><span class="fa fa-angle-left icon"></span> Arduino <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>The Arduino is an open-source computer hardware/software platform for building digital devices and interactive objects that can sense and control the physical world around them. In this class you will learn how the Arduino platform works in terms of the physical board and libraries and the IDE (integrated development environment). </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/iot.svg" alt="">
+                            <h4><span class="fa fa-angle-left icon"></span> IOT <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>Design, create, and deploy a fun IoT device using Arduino and Raspberry Pi platforms.
+                                This Specialization covers embedded systems, the Raspberry Pi Platform, and the Arduino environment for building devices that can control the physical world. In the final Capstone Project, you’ll apply the skills you learned by designing, building, and testing a microcontroller-based embedded system, producing a unique final project suitable for showcasing to future employers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-5 ml-auto mr-auto" id="card4">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="fa fa-database" style="font-size: 300%; margin-top:40px; margin-bottom: 50px;"></span>
+                            <h4><span class="fa fa-angle-left icon"></span> DBMS <span class="fa fa-angle-right icon"></span></h4>
+                        </div>
+                        <div class="card-back">
+                            <p>Due to the increase in the number of mobile devices day by day there is a boom in the demand for Mobile Application Developers. This course focuses on android application development with java</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- courses section end -->
+
+        <div class="container webinar" id="webinar">
+            <img class="img-fluid" src="styles/webinar-banner.jpg" alt="">
+            <div class="poster">
+                <h1>Webinar</h1>
+                <h3>How To Crack Product Based Companies</h3>
+                <div class="poster-inner">
+                    <h3>Coming Soon...!</h3>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <div class="navlinks">
+                            <p><a href="#">Webinars</a></p>
+                            <p>Courses</p>
+                            <p><a href="#">Data structure and Algorithm</a></p>
+                            <p><a href="#">Core Java</a></p>
+                            <p><a href="#">Andriod app development</a></p>
+                            <p><a href="#">IOT</a></p>
+                            <p><a href="#">Advance IOT</a></p>
+                            <p><a href="#">Advance Python</a></p>
+                            <p><a href="#">Arduino</a></p>
+                            <p><a href="#">DBMS</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="about">
+                        <h4>About</h4>
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga officiis, autem et illo quaerat reiciendis consequuntur! Totam quos quo aut, tenetur aliquid nisi ullam in consectetur officia, sapiente iusto!</p>
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga officiis, autem et illo quaerat reiciendis consequuntur! Totam quos quo aut, tenetur aliquid nisi ullam in consectetur officia, sapiente iusto!</p>
+                        <div class="feedback">
+                            <h5>write us</h5>
+                            <form class="feedback-form" action="">
+                                <input type="text" placeholder="your name" required>
+                                <input type="email" placeholder="your email" required>
+                                <input type="number" placeholder="phone" required>
+                                <textarea rows="4" cols="30" name="comment" form="feedback-form">Enter text here...</textarea><br>
+                                <button type="submit"><span class="fa fa-paper-plane"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 contact" id="contact" style="text-align: left; padding-left: 50px;">
+                        <h4>Contact</h4>
+                        <p><a href="tel:7972902094"><span class="fa fa-phone" style="font-size: 25px;"></span></a> 7972902094</p>
+                        <p><span class="fa fa-whatsapp" style="font-size: 25px;"></span></a> 7972902094</p>
+                        <p><a href="mailto:support@proinsite.in"><span class="fa fa-envelope" style="font-size: 25px;"></span> support@proinsite.in</a></p>                        
+                        <div class="followicon">
+                            <h4>Follow us on</h4>
+                            <span class="fa fa-facebook"></span>
+                            <span class="fa fa-instagram"></span>
+                            <span class="fa fa-youtube"></span>
+                            <span class="fa fa-linkedin"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span>Privacy</span>
+                        <span> Terms</span>
+                        <p>Copyright <span class="fa fa-copyright"></span> <a href="admin/admin.html">2020</a> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="loader-wraper">
+            <svg
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                sodipodi:docname="drawing.svg"
+                inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+                width="100mm"
+                height="150mm"
+                viewBox="0 0 170 297"
+                version="1.1"
+                id="svg8">
+                    
+                <g
+                    id="layer1"
+                    inkscape:groupmode="layer"
+                    inkscape:label="Layer 1">
+                    <path
+                    sodipodi:nodetypes="ccccccc"
+                    id="outline-path"
+                    d="m 56.885417,123.76114 -6e-6,13.22916 27.119794,16.46804 L 111.125,136.9903 V 103.1875 L 84.005205,86.71947 56.885411,103.1875"
+                    style="fill:none;stroke:rgb(2, 117, 92);stroke-width:4.23333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-opacity:1" />
+                    <path
+                    sodipodi:nodetypes="ccccc"
+                    id="outline-path1"
+                    d="M 109.80209,136.52498 H 84.121937 v 0 -32.27916 h -27.23652"
+                    style="fill:none;stroke:rgb(2, 117, 92);stroke-width:2.25982;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+                    <path
+                    id="eyepath"
+                    d="M 85.989582,111.91875 H 96.572917"
+                    style="fill:none;stroke:rgb(2, 117, 92);stroke-width:3.01708;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.50854, 1.50854; stroke-opacity:1;" />
+                    <ellipse
+                    ry="2.6458585"
+                    rx="2.6458385"
+                    cy="111.91874"
+                    cx="100.0125"
+                    id="elipse"
+                    style="opacity:1;fill:#803300;fill-opacity:0;fill-rule:evenodd;stroke:#ec3b02;stroke-width:1.76389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke fill markers" />
+                    <path
+                    id="eyepath"
+                    d="m 82.28505,118.79424 -10.583333,0.004"
+                    style="fill:none;stroke:rgb(2, 117, 92);stroke-width:3.01708;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.50854, 1.50854;  stroke-opacity:1;" />
+                    <ellipse
+                    style="opacity:1;fill:#803300;fill-opacity:0;fill-rule:evenodd;stroke:#ec3b02;stroke-width:1.76389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke fill markers"
+                    id="elipse"
+                    cx="68.262466"
+                    cy="118.7979"
+                    rx="2.6458385"
+                    ry="2.6458585" />
+                </g>
+            </svg>
+
+            <div class="comming-soon">
+                <h1>Coming Soon...!</h1>
+            </div>
+        </div>
+        <script>
+            $(window).on("load", function(){
+                $(".loader-wraper").fadeOut("slow");
+            });
+        </script>
+    </body>
+</html>
+
+
+<!-- 
+<a href= "whatsapp://send?text=GFG Example for whatsapp sharing"
+                                    data-action="share/whatsapp/share"
+                                    target="_blank"> -->
+                <!-- <svg width="405" height="145" xmlns="http://www.w3.org/2000/svg">
+                   
+                   
+                    <g stroke="null">
+                     <title>background</title>
+                     <rect x="-1" y="-1" width="400px" height="150px" id="canvas_background" fill="none" stroke="null"/>
+                    </g>
+                    <g stroke="null">
+                     <title>Layer 1</title>
+                     <g stroke="null" id="svg_57">
+                      <g stroke="null" id="svg_58">
+                       <line stroke="#ffffaa" fill="none" stroke-width="9" fill-opacity="null" x1="14.46703" y1="83.57865" x2="14.46703" y2="110.84476" id="svg_10" stroke-linejoin="null" stroke-linecap="null"/>
+                       <g stroke="null" id="svg_56">
+                        <line stroke="#ffffaa" fill="none" stroke-width="9" x1="119.19029" y1="34.88303" x2="119.19029" y2="109.38438" id="svg_5" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="9" fill-opacity="null" x1="121.12603" y1="106.00315" x2="65.40168" y2="136.8907" id="svg_13" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="9" fill-opacity="null" x1="69.63091" y1="136.8907" x2="12.01761" y2="106.93914" id="svg_15" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="9" fill-opacity="null" x1="121.12603" y1="38.61215" x2="63.51271" y2="8.66059" id="svg_16" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="9" fill-opacity="null" x1="67.29064" y1="9.10786" x2="9.76099" y2="39.99541" id="svg_17" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="3" fill-opacity="null" x1="65.76932" y1="106.08606" x2="115.45913" y2="106.08606" id="svg_18" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="3" x1="12.00695" y1="42.74052" x2="67.68946" y2="42.7405" id="svg_19" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="4" fill-opacity="0" x1="67.79067" y1="104.98425" x2="66.84619" y2="41.42763" id="svg_20" stroke-linejoin="null" stroke-linecap="null"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="5" fill-opacity="null" x1="69.22143" y1="60.44764" x2="93.45212" y2="60.44764" id="svg_22" stroke-linejoin="null" stroke-linecap="null" stroke-dasharray="5,2,2,2"/>
+                        <line stroke="#ffffaa" fill="none" stroke-width="5" fill-opacity="null" x1="41.00366" y1="79.53798" x2="67.61642" y2="79.53798" id="svg_23" stroke-linejoin="null" stroke-linecap="null" stroke-dasharray="5,2,2,2"/>
+                        <ellipse stroke="#ff0000" fill="none" stroke-width="3" fill-opacity="null" cx="99.05626" cy="60.85346" id="svg_24" rx="6.13913" ry="7.4879"/>
+                        <ellipse stroke="#ff0000" fill="none" stroke-width="3" fill-opacity="null" cx="34.88481" cy="78.88255" id="svg_26" rx="6.13913" ry="7.95588"/>
+                        <text stroke="#d2e9f2" fill="#e5e5e5" stroke-width="0" x="143.06553" y="106.59995" id="svg_30" font-size="24" font-family="'League Gothic', sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold" transform="matrix(2.220512684982889,0,0,2.4044981565152623,-183.75828487217677,-173.294688030584) ">Proinsite</text>
+                        <text stroke="#f2bb79" fill="#ffaa56" stroke-width="0" x="-26.88864" y="-356.20541" id="svg_32" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="normal" transform="matrix(0.6022921919397299,0,0,0.47064764025889744,152.3814990013458,271.61297401761277) ">Grow with us</text>
+                       </g>
+                      </g>
+                     </g>
+                     <text fill="#000000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="301.32541" y="234.43495" id="svg_27" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(9.516355514526367,0,0,1,-2566.084370970726,0) " stroke="#fff"/>
+                     <g id="svg_59"/>
+                    </g>
+                   </svg> -->
