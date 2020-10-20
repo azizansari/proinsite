@@ -361,3 +361,57 @@
                      <g id="svg_59"/>
                     </g>
                    </svg> -->
+
+
+
+                   <?php
+
+                        if(isset($_POST['registerUser'])){
+                        $servername = "localhost";
+                        $username = "u393311787_root";
+                        $password = "@Pro1nsite";
+                        $dbname = "u393311787_pro_insite";
+
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        // Check connection
+                        if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                        }
+
+
+                       $userName = $_POST['Name'];
+                       $userEmail = $_POST['Email'];
+                       $userMob = $_POST['Contact'];
+                       $userCategory = $_POST['Category'];
+
+
+                   $sql = "INSERT INTO `Webinar_Registration` ( `Name`, `Email`, `Contact`, `Occupation`, `Reg_Date`) VALUES ( '$userName', '$userEmail', '$userMob', '$userCategory',current_timestamp())";
+
+                        if ($conn->query($sql) === TRUE) {
+                        echo  "<script>alert('registered successfully')</script>";
+                        } else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                        }
+
+                        $conn->close();
+
+
+                        ini_set( 'display_errors', 1 );
+                        error_reporting( E_ALL );
+                        $from = "noreply@proinsite.in";
+                        $to = $_POST['Email'];
+                        $subject = "Webinar Registration";
+                        $message = "Dear " . $userName . ", \n"
+                        . " \n" . "Congratulations your registration is confirmed !\n"
+                        . "We will send you an invitation to get started soon.\n"
+                        . " \n" . "We hope that you would join and make use of this opportunity.\n"
+                        . " \n" . " \n" . "Happy Learning!\n"
+                        . " \n" . " \n" . "Thanks and Regards\n"
+                        . " \n" . "Team ProInsite Edutek.";
+                        $headers = "From: ProInsite " . $from;
+                        mail($to,$subject,$message, $headers);
+                        
+            
+                    }
+                    ?>
